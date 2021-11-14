@@ -12,9 +12,9 @@ import java.util.List;
 import java.util.UUID;
 
 public interface OutputProductRepository extends JpaRepository<OutputProduct, UUID> {
-    List<OutputProduct> findAllByDateBetween(Date from, Date to);
+//    List<OutputProduct> findAllByDateBetween(Date from, Date to);
     List<OutputProduct> findAllByOutputId(UUID id);
 
-    List<OutputProduct> findAllByDate(Date date);
+//    List<OutputProduct> findAllByDate(Date date);
 }
 

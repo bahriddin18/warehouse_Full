@@ -19,7 +19,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/file")
 public class AttachmentController {
-//    public static final String uploadDirectory = "upload";
+    //    public static final String uploadDirectory = "upload";
     final
     AttachmentRepository attachmentRepository;
     final

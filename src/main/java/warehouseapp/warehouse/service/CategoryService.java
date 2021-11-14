@@ -1,6 +1,5 @@
 package warehouseapp.warehouse.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import warehouseapp.warehouse.entity.Category;
 import warehouseapp.warehouse.payload.ApiResponse;

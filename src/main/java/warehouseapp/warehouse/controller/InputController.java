@@ -30,15 +30,15 @@ public class InputController {
     public HttpEntity<?> save(@RequestBody InputDTO inputDTO) throws ParseException {
         ApiResponse apiResponse = inputService.addInput(inputDTO);
         return ResponseEntity.status(apiResponse.isSuccess()
-                ? HttpStatus.CREATED:
-                HttpStatus.CONFLICT).
+                        ? HttpStatus.CREATED :
+                        HttpStatus.CONFLICT).
                 body(apiResponse);
 
     }
 
     @GetMapping
     public HttpEntity<List<Input>> getAll() {
-        return  ResponseEntity.ok(inputRepository.findAll());
+        return ResponseEntity.ok(inputRepository.findAll());
     }
 
 }

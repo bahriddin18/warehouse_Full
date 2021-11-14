@@ -48,9 +48,10 @@ public class ProductController {
     }
 
     @GetMapping("/changeStatus/{id}")
-    public ApiResponse changeStatus(@PathVariable Integer id){
+    public ApiResponse changeStatus(@PathVariable Integer id) {
         return productService.changeStatus(id);
     }
+
     @DeleteMapping("/{id}")
     public ApiResponse deleted(@PathVariable Integer id) {
         if (!productRepository.existsById(id)) return new ApiResponse("Not Found!", false);

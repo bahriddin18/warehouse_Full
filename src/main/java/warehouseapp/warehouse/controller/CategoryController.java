@@ -29,8 +29,8 @@ public class CategoryController {
     public HttpEntity<?> save(@RequestBody CategoryDTO categoryDTO) {
         ApiResponse apiResponse = categoryService.saveCategory(categoryDTO);
         return ResponseEntity.status(apiResponse.isSuccess()
-                ? HttpStatus.CREATED :
-                HttpStatus.CONFLICT).
+                        ? HttpStatus.CREATED :
+                        HttpStatus.CONFLICT).
                 body(apiResponse);
     }
 

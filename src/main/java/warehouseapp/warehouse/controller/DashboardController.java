@@ -32,7 +32,7 @@ public class DashboardController {
         return dashboardService.notification(date);
     }
 
-    @GetMapping("/dailyOutout")
+    @GetMapping("/dailyOutput")
     public HttpEntity<?> getDailyOutputProduct(@RequestParam String date) throws ParseException {
         return ResponseEntity.ok(dashboardService.getDailyOutput(date));
     }
